@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main2"
+    tools:context=".ColorActivity">
+
+
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:text="Current Color: "
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/colorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:width="500px"
+        android:background="@color/colorAccent"
+        android:drawableTop="@drawable/customize_icon"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Customize"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_layout"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/rainbowBtn"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorAccent"
+        android:drawableTop="@drawable/rainbow_icon"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:text="Rainbow Effects"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorBtn" />
+
+    <Button
+        android:id="@+id/rainbowChaseBtn"
+        android:layout_width="298dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="164dp"
+        android:background="@color/colorAccent"
+        android:drawableTop="@drawable/rainbow_chase_icon"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:text="Rainbow Chasing effects"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorBtn" />
+
+    <Button
+        android:id="@+id/chasingBtn"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:background="@color/colorAccent"
+        android:drawableTop="@drawable/chasing_icon"
+        android:padding="15dp"
+        android:text="Chasing Effects"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorBtn" />
+
+    <LinearLayout
+        android:id="@+id/color_layout"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="#000"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_tv"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
